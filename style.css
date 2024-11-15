@@ -11,10 +11,8 @@ body{
 
 img{
     max-width: 100%;
-    height: auto;
+    margin: 20px;
     display: block;
-    align-items: center;
-    margin: auto;
     justify-content: center;
 }
 
@@ -28,9 +26,9 @@ img{
 }
 
 nav a {
-        font-family: "Barlow", serif;
-        font-weight: 600;
-        font-style: normal;
+    font-family: "Barlow", serif;
+    font-weight: 600;
+    font-style: normal;
     margin-left: 20px;
     text-decoration: none;
     color: #000;
@@ -49,27 +47,24 @@ nav a {
         font-family: "Instrument Serif", serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 60px;
+        font-size: 100px;
       }
 
 
 .index .grid{
+    max-width: 1280px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid: auto rows 340px;;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 20px auto;
+    justify-items: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 0 20px;
+
  }
 
  .projet-large{
    background-color: rgb(255, 255, 255);
-   grid-column: 1/-1;
+   grid-column: span 2;
 
- }
-
- @media (min-width:768){
-    .index .grid{
-        grid-template-columns: repeat(2,minmax(320px,1fr));
-    }
  }
